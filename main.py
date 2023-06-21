@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -17,6 +17,10 @@ def hello_world():
            '<p>A paragraph</p>' \
            '<img src="https://media.istockphoto.com/id/1035676256/photo/background-of-galaxy-and-stars.jpg?s=612x612&w=0&k=20&c=dh7eWJ6ovqnQZ9QwQQlq2wxqmAR7mgRlQTgaIylgBwc=">'
 
+
+@app.route('/rendering_html')
+def render_html():
+    return render_template('index.html')  # Note that html files should be templates folder
 
 @app.route('/bye')
 @make_bold
