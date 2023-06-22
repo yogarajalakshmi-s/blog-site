@@ -1,4 +1,6 @@
 from flask import Flask, render_template
+import random
+from datetime import datetime
 
 app = Flask(__name__)
 
@@ -22,6 +24,7 @@ def hello_world():
 def render_html():
     return render_template('index.html')  # Note that html files should be templates folder
 
+
 @app.route('/bye')
 @make_bold
 def bye():
@@ -32,6 +35,14 @@ def bye():
 @app.route('/username/<name>/<int:number>')  # Variable rules - URL <name> will be rendered in the page
 def greet(name, number):
     return f"Hello {name}! You're {number} years old."
+
+
+# Using jinja template in html files to execute python expressions
+@app.route('/day_57')
+def say_hello_world():
+    random_num = random.randint(1, 10)
+    year = datetime.today().year
+    return render_template('test_1_day_57.html', num=random_num, year=year)
 
 
 if __name__ == "__main__":
