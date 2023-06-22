@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-import random
+import random, requests
 from datetime import datetime
 
 app = Flask(__name__)
@@ -43,6 +43,14 @@ def say_hello_world():
     random_num = random.randint(1, 10)
     year = datetime.today().year
     return render_template('test_1_day_57.html', num=random_num, year=year)
+
+
+# Multiline statements with Jinja - see blog.html
+@app.route('/blog')
+def blog():
+    response = requests.get(url=" https://api.npoint.io/c790b4d5cab58020d391")
+    blogs = response.json()
+    return render_template('blog.html', blogs=blogs)
 
 
 if __name__ == "__main__":
