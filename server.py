@@ -46,8 +46,8 @@ def say_hello_world():
 
 
 # Multiline statements with Jinja - see blog.html
-@app.route('/blog')
-def blog():
+@app.route('/blog/<num>')  # See index.html - url building, num is passed as a parameter
+def get_blog(num):
     response = requests.get(url=" https://api.npoint.io/c790b4d5cab58020d391")
     blogs = response.json()
     return render_template('blog.html', blogs=blogs)
