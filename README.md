@@ -16,7 +16,7 @@ Validations are performed. If the mail ID already exists, shows the flask flash 
 **Home** - After successful login, the home page shows all the blog posts. Only the admin user (first signup) will be able to create, edit, delete a post. These buttons will not be shown for other users.
 If a user clicks on a post, they can view the detailed post and comment on it.
 The routes are all protected, i.e., if a user tries to access the edit or delete post by directly hitting the route, they will be shown 'Unauthorized message'.
-If a user tries to view a post without logging in, they will be shown 'Unauthorized'.
+If a user tries to view a post without logging in, they will be shown 'Unauthorized'.  
 **About** - Basic template showing About page  
 **Contact** - A contact form is created to make users contact with the admin user.  
 **Logout** - After logging out, the user is redirect to the login page.
