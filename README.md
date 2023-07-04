@@ -20,8 +20,8 @@ If a user tries to view a post without logging in, they will be shown 'Unauthori
 **Contact** - A contact form is created to make users contact with the admin user.  
 **Logout** - After logging out, the user is redirect to the login page.  
 
-**References:**
-https://flask-login.readthedocs.io/en/latest/
-https://flask.palletsprojects.com/en/2.3.x/patterns/flashing/
-https://flask.palletsprojects.com/en/2.3.x/patterns/templateinheritance/
-https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/
+**References:**  
+https://flask-login.readthedocs.io/en/latest/  
+https://flask.palletsprojects.com/en/2.3.x/patterns/flashing/  
+https://flask.palletsprojects.com/en/2.3.x/patterns/templateinheritance/  
+https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/  
