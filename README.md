@@ -9,6 +9,7 @@ The functionalities of the site include, Registering new user, Login, Home page 
 Maintaining three tables - users, blog_posts, comments.
 
 **Functionalities:**  
+
 **Register** - Stored the users in the DB using SQLAlchemy. Secured the password using PBKDF2 hashing.
 Validations are performed. If the mail ID already exists, shows the flask flash message.  
 **Login** - Logging in users by comparing the data from DB. If the mail ID is incorrect, redirects the users to register page. If the password is incorrect, show a flash message that it's incorrect.  
