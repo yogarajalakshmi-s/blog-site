@@ -6,7 +6,7 @@ Python, Flask, Jinja, SQLite, SQLAlchemy, Html, CSS, Bootstrap
 
 **About this project:**  
 Developed this blog site from scratch.
-The functionalities of the site include, Registering new user, Login, Home page displaying all blogs, Ability to add new blog, Commenting on Blogs, Contact, About, Logout.
+The functionalities of the site include, Registering new user, Login, Home page displaying all blogs, Ability to create, view, update and delete a blog, Commenting on Blogs, Contact, About, Logout.  
 Maintaining three tables - users, blog_posts, comments.
 
 **Functionalities:**  
