@@ -2,7 +2,7 @@
 This is a blog site running on Flask
 
 **Tech Stack**   
-Python, Flask, Jinja, SQLite, SQLAlchemy, Html, CSS, Bootstrap
+Python, Flask, Jinja, SQLAlchemy, Html, CSS, Bootstrap
 
 **About this project:**  
 Developed this blog site from scratch.
